@@ -1,4 +1,4 @@
-package ro.fasttrackit.lab11;
+package ro.fasttrackit.lab11.classes;
 
 public class Guitar {
     String type; //electric or acoustic
