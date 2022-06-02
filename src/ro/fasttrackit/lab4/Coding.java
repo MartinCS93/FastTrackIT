@@ -49,8 +49,8 @@ public class Coding {
 
     public static int successiveAdditions(int a, int b) {
         int result = 0;
-        for(int i = 1; i <= b; i++) {
-        result+=a;
+        for (int i = 1; i <= b; i++) {
+            result += a;
         }
         return result;
     }
