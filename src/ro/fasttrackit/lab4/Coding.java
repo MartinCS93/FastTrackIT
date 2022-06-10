@@ -1,5 +1,7 @@
 package ro.fasttrackit.lab4;
 
+import java.util.Scanner;
+
 public class Coding {
     public static void main(String[] args) {
         System.out.println(greaterThan((byte) -15));
