@@ -23,7 +23,7 @@ public class ExtraCoding {
         System.out.println();
         buildArrayWithTwoInt();
         System.out.println();
-        //guessTheRandomNumber();
+        guessTheRandomNumber();
 
 
     }
@@ -90,12 +90,12 @@ public class ExtraCoding {
     public static void generateRandomNumber() {
         Random random = new Random();
         int randomNumber = random.nextInt(5);
-        System.out.println("Guess the number. Please enter a value from 0 to 5");
+        System.out.println("Guess the number. Please enter a value between 0 to 5");
         Scanner scanner = new Scanner(System.in);
         int guessedNumber = scanner.nextInt();
-        if(guessedNumber == randomNumber) {
+        if (guessedNumber == randomNumber) {
             System.out.println("You win!");
-        } else if (guessedNumber>randomNumber) {
+        } else if (guessedNumber > randomNumber) {
             System.out.println("Sorry, you are too high. Try again!");
         } else {
             System.out.println("Sorry, you are too low. Try again!");
@@ -111,24 +111,34 @@ public class ExtraCoding {
         int k = scanner.nextInt();
 
         int[] array = new int[n];
-        for(int i = 1; i<n; i++) {
+        for (int i = 1; i < n; i++) {
             array[i] = i;
-            if(array[i] % k == 0) {
+            if (array[i] % k == 0) {
                 System.out.print(array[i] + " ");
             }
         }
     }
 
-    /*public static void guessTheRandomNumber() {
+    public static void guessTheRandomNumber() {
         Random random = new Random();
         int randomNumber = random.nextInt(10);
         Scanner scanner = new Scanner(System.in);
-        int guessedNumber = scanner.nextInt();
+        int guessedNumber;
         int attempts = 0;
-        System.out.println("Guess the number");*/
+        System.out.println("Guess the number. Enter a value between 0 and 10: ");
+        do {
+            guessedNumber = scanner.nextInt();
+            if (guessedNumber == randomNumber) {
+                System.out.println("You won!");
+                System.out.println("Number was guessed in " + attempts + " attempts.");
+            } else {
+                System.out.println("Try again!");
+                attempts++;
+            }
+        } while (guessedNumber != randomNumber);
 
 
-
+    }
 }
 
 
