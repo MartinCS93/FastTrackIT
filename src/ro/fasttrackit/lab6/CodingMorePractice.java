@@ -16,7 +16,6 @@ public class CodingMorePractice {
         System.out.println(maxNumberOfDonations(500, 5));
         System.out.println();
         System.out.println(eachSentenceOnAnewLine("Ana are mere.Maria are pere.Ion are cirese.Gheorghe are gutui."));
-
     }
 
     public static String productInt(int[] array) {
@@ -57,7 +56,6 @@ public class CodingMorePractice {
             totalDonations += random.nextInt(target);
         }
         return "Success! Total donations = " + totalDonations;
-
     }
 
     public static String maxNumberOfDonations(int target, int maxAttempts) {
@@ -74,5 +72,6 @@ public class CodingMorePractice {
     public static String eachSentenceOnAnewLine(String sentences) {
         String string = "";
         string = sentences.replace(".", "\n");
-        return string;    }
+        return string;
+    }
 }
