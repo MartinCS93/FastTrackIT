@@ -39,7 +39,7 @@ public class Clients {
     }
 
     public boolean isAlreadyClient() {
-        return true;
+        return alreadyClient;
     }
 
     @Override
