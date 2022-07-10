@@ -26,5 +26,11 @@ public class Dealer {
 
         System.out.println(newDealer);
 
+        DealersStorage dealersStorage = new DealersStorage();
+        dealersStorage.writeCars(newDealer);
+
+        ClientsStorage clientsStorage = new ClientsStorage();
+        clientsStorage.writeClients(newDealer);
+
     }
 }

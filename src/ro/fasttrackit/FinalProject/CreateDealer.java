@@ -1,6 +1,7 @@
 package ro.fasttrackit.FinalProject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CreateDealer {
@@ -16,11 +17,11 @@ public class CreateDealer {
     }
 
     public List<Cars> getCars() {
-        return cars;
+        return Collections.unmodifiableList(cars);
     }
 
     public List<Clients> getClients() {
-        return clients;
+        return Collections.unmodifiableList(clients);
     }
 
     public String getName() {
