@@ -33,10 +33,10 @@ public class Dealer {
 
     @Override
     public String toString() {
-        return "DealerAuto{" +
-                "cars=" + cars +
+        return "Dealer{" +
+                "name='" + name + '\'' +
+                ", cars=" + cars +
                 ", clients=" + clients +
-                ", name='" + name + '\'' +
                 '}';
     }
 

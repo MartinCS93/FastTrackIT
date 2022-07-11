@@ -1,7 +1,6 @@
 package ro.fasttrackit.FinalProject.Dealer;
 
 import ro.fasttrackit.FinalProject.Cars.Cars;
-import ro.fasttrackit.FinalProject.Dealer.Dealer;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -28,7 +27,7 @@ public class DealersStorage {
 
     private String itemToLine(Cars cars) {
         return cars.getModel() + " | " + cars.getEquipmentLine() + " | " + cars.getTransmission() + " | " + cars.getEngineCapacity()
-                + " | " + cars.getEngineType() + " | " + cars.getHorsePower() + " | " + cars.getColor() + " | " +
+                + " | " + cars.getEngine() + " | " + cars.getHorsePower() + " | " + cars.getColor() + " | " +
                 cars.getVinNumber() + " | " + cars.getPrice();
     }
 
