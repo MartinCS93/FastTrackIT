@@ -1,4 +1,4 @@
-package ro.fasttrackit.FinalProject;
+package ro.fasttrackit.FinalProject.Cars;
 
 public class Cars {
     private final String model;

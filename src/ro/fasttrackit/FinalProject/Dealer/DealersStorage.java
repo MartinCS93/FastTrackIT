@@ -1,16 +1,18 @@
-package ro.fasttrackit.FinalProject;
+package ro.fasttrackit.FinalProject.Dealer;
+
+import ro.fasttrackit.FinalProject.Cars.Cars;
+import ro.fasttrackit.FinalProject.Dealer.Dealer;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.List;
 
 public class DealersStorage {
 
-    private static Path STORAGE = Path.of("FinalProject", "cars.txt");
+    private static Path STORAGE = Path.of("FinalProject/Cars", "cars.txt");
 
-    public void writeCars(CreateDealer dealer) {
+    public void writeCars(Dealer dealer) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(STORAGE.toFile()))) {
             writer.write(dealer.getName());
             writer.newLine();

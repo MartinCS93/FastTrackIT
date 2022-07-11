@@ -1,4 +1,4 @@
-package ro.fasttrackit.FinalProject;
+package ro.fasttrackit.FinalProject.Clients;
 
 public class Clients {
 

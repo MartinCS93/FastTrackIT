@@ -1,16 +1,19 @@
-package ro.fasttrackit.FinalProject;
+package ro.fasttrackit.FinalProject.Dealer;
+
+import ro.fasttrackit.FinalProject.Cars.Cars;
+import ro.fasttrackit.FinalProject.Clients.Clients;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CreateDealer {
+public class Dealer {
     private String name;
     private final List<Cars> cars;
     private List<Clients> clients;
 
 
-    public CreateDealer(String name) {
+    public Dealer(String name) {
         this.name = name;
         cars = new ArrayList<>();
         clients = new ArrayList<>();

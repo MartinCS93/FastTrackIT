@@ -1,8 +1,14 @@
 package ro.fasttrackit.FinalProject;
 
-public class Dealer {
+import ro.fasttrackit.FinalProject.Cars.Cars;
+import ro.fasttrackit.FinalProject.Clients.Clients;
+import ro.fasttrackit.FinalProject.Clients.ClientsStorage;
+import ro.fasttrackit.FinalProject.Dealer.Dealer;
+import ro.fasttrackit.FinalProject.Dealer.DealersStorage;
+
+public class Main {
     public static void main(String[] args) {
-        CreateDealer newDealer = new CreateDealer("FastTrack Automotive");
+        Dealer newDealer = new Dealer("FastTrack Automotive");
 
         newDealer.addCars(new Cars("Golf", "Life", "Manual", "Pure White Uni",
                 1.5, "TSI", 150, "WVWZZZCDZNW214810", 24500.14));

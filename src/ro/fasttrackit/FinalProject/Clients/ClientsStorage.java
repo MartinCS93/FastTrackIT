@@ -1,4 +1,7 @@
-package ro.fasttrackit.FinalProject;
+package ro.fasttrackit.FinalProject.Clients;
+
+import ro.fasttrackit.FinalProject.Clients.Clients;
+import ro.fasttrackit.FinalProject.Dealer.Dealer;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -6,9 +9,9 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class ClientsStorage {
-    private static Path STORAGE = Path.of("FinalProject", "clients.txt");
+    private static Path STORAGE = Path.of("FinalProject/Clients", "clients.txt");
 
-    public void writeClients(CreateDealer client) {
+    public void writeClients(Dealer client) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(STORAGE.toFile()))) {
             writer.write(client.getName());
             writer.newLine();
