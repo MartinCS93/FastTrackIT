@@ -1,4 +1,0 @@
-FastTrack Automotive
-Cristian | Martin | 0722162126 | Oradea | 1930114055077 | true
-Andrea | Ionescu | 0770148789 | Cluj | 2960211058669 | false
-Bogdan | Alexandrescu | 0722425144 | Timisoara | 1691103789668 | true
